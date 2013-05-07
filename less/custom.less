@@ -1,0 +1,112 @@
+.hero-unit {
+    position: relative;
+}
+
+#popcorn {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+#admit-one {
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+}
+
+body {
+    padding-top: 60px;
+    padding-bottom: 10px;
+    background-image: url(/img/bgnoise.png);
+}
+
+footer > hr {
+    position: relative;
+    z-index: -2;
+}
+
+.sidebar-nav {
+    padding: 1em 1em;
+}
+
+body h1, body h2, body h3, body h4, body h5, .hero-unit h1, .webname {
+    font-family: 'Poiret One';
+    color: #BB2000;
+}
+
+.webname {
+    font-weight: bold !important;
+}
+
+.normal-font {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.hero-unit, .well {
+    .box-shadow(1px 1px 8px rgba(0, 0, 0, 0.3));
+    background-color: #FFF;
+}
+
+.hero-unit, .red-borders {
+    border-right: 4px solid #C40;
+    border-left: 4px solid #C40;
+}
+
+#movie-list .thumbnail {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+    background-color: #ddd;
+}
+
+#movie-list .thumbnail img, img.smoothed {
+    border-radius: 4px;
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.6);
+    border: 1px solid black;
+}
+
+#movie-list .thumbnail .shiny {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/min_shine.png);
+    background-repeat: repeat;
+    .opacity(0);
+    .transition(opacity .6s linear);
+}
+#movie-list .thumbnail:hover .shiny {
+    .opacity(60);
+    .transition(opacity .6s linear);
+}
+
+#movie-list a.thumbnail {
+    border-color: #fff;
+    .transition(border-color 1.6s linear);
+}
+#movie-list a.thumbnail:hover {
+    border-color: #999;
+    .transition(border-color 1.6s linear);
+}
+
+body .navbar .navbar-inner {
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 0 0 4em 4em;
+}
+
+.hero-unit {
+    padding: 32px;
+
+    h1 {
+        font-size: 42px;
+    }
+}
+
+/* Fix damn thumbnails with row-fluid */
+.row-fluid ul.thumbnails li.span12 + li { margin-left : 0px; }
+.row-fluid ul.thumbnails li.span6:nth-child(2n + 3) { margin-left : 0px; }
+.row-fluid ul.thumbnails li.span4:nth-child(3n + 4) { margin-left : 0px; }
+.row-fluid ul.thumbnails li.span3:nth-child(4n + 5) { margin-left : 0px; }
